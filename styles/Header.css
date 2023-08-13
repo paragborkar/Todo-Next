@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    background-color: rgb(42, 118, 165);
+    color: white;
+    align-items: center;
+    border-radius: 50px;
+    margin: 5px 5px;
+    padding: 2px 2px;
+    box-shadow: 7px 8px 25px black;
+    margin-bottom: 2rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    background-color: orange;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 9px;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    background-color: rgb(193, 137, 32);
+    height: 45px;
+    width: 110px;
+    padding-left: 15px;
+}
+
+.addList input{
+    border: 1px solid black;
+    padding: 1.2rem;
+    margin-top: 2rem;
+    width: 80%;
+    border-radius: 50px;
+}
+
+.addList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button1{
+    background-color: orange;
+    height: 3rem;
+    color: white;
+    width: 80%;
+    border-radius: 50px;
+    padding-left: 9px;
+    margin-top: 1.5rem;
+}
