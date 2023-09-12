@@ -1,11 +1,10 @@
 import EditListForm from '../../../../components/EditListForm'
 import React from 'react'
-
 const page = async({params}) => {
   const {id} = params;
   const getListById = async (id) =>{
     try{
-      const res= await fetch(`http://localhost:3000/api/list/${id}`,{
+      const res= await fetch(`${process.env.API_URL}/api/list/${id}`,{
         cache : "no-store"
       });
       if(!res.ok){

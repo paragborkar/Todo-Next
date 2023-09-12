@@ -3,11 +3,9 @@ import RemoveButton from './RemoveButton'
 import Link from 'next/link'
 import {LuEdit} from 'react-icons/lu';
 import '../styles/TaskList.css';
-import { useRouter } from 'next/navigation';
-
 const getList = async () =>{
   try{
-    const res =await fetch('http://localhost:3000/api/list',
+    const res =await fetch(`${process.env.API_URL}/api/list`,
     {
       cache: "no-store"
     });
@@ -21,7 +19,8 @@ const getList = async () =>{
 }
 
 const TaskList = async () => {
-  const {list} = await getList();
+  
+  const {list}= await getList();
   return (
     <>
     {list.map(t => (
